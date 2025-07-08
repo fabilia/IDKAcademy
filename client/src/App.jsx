@@ -11,7 +11,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/oauth" element={<OAuthHandler />} />
+        <Route path="/oauth" element={<div>🚀 OAuthRoute Works!</div>} />
+        <Route path="/oauth/*" element={<OAuthHandler />} />
         <Route path="/choose-role" element={<ChooseRole />} />
         <Route element={<ProtectedRoute role="admin" />}>
           <Route path="/admin" element={<AdminPage />} />
@@ -24,4 +25,6 @@ function App() {
   );
 }
 
-export default App;
+export default function App() {
+  return null; // all routing now in index.js
+}

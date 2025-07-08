@@ -40,13 +40,14 @@ export const fetchCurrentUser = createAsyncThunk(
   'auth/fetchCurrentUser',
   async (_, { rejectWithValue }) => {
     try {
-      const response = await api.get('/auth/me');
-      return response.data; // { id, name, role, email }
+      const response = await api.get('/auth/me');   // ← note `/auth/me`
+      return response.data;  // { id, name, role, email }
     } catch (err) {
       return rejectWithValue(err.response?.data?.message || err.message);
     }
   }
 );
+
 
 const initialState = {
   user: null,                         // { id, name, role, email }
