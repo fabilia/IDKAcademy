@@ -61,50 +61,50 @@ IDKAcademy is a Single-Page Application (SPA) that allows:
 
 Create a file at `server/.env` with the following keys:
 
-# MongoDB
+### MongoDB
 MONGO_URI=mongodb://localhost:27017/idkAcademyDB
 
-# JWT
+### JWT
 JWT_SECRET=your_jwt_secret_here
 
-# React client URL
+### React client URL
 CLIENT_URL=http://localhost:3000
 
-# Email (for Nodemailer)
+### Email (for Nodemailer)
 EMAIL_USER=your@gmail.com
 EMAIL_PASS=app-password
 
-# Google OAuth
+### Google OAuth
 GOOGLE_ID=your_google_client_id
 GOOGLE_SECRET=your_google_client_secret
 
 ### Installation
 
-# Clone the repo
+### Clone the repo
 git clone https://github.com/your-org/IDKAcademy.git
 cd IDKAcademy
 
-# Install backend dependencies
+### Install backend dependencies
 cd server
 npm install
 
-# Install frontend dependencies
+### Install frontend dependencies
 cd ../client
 npm install
 
 ### Running the App
 
 Open two terminals:
-# Terminal 1: start backend
+### Terminal 1: start backend
 cd server
 npm run dev      # nodemon server.js on port 5000
 
-# Terminal 2: start frontend
+### Terminal 2: start frontend
 cd client
 npm start        # React app on port 3000
 
-Navigate to http://localhost:3000
-The React app will proxy API calls to http://localhost:5000/api/...
+- Navigate to http://localhost:3000
+- The React app will proxy API calls to http://localhost:5000/api/...
 
 ## 📚 API Documentation
 
@@ -190,13 +190,13 @@ DELETE /api/scores/:id
 Delete a score (admin only).
 
 ## ✨ Features
-SPA with React Router
-State managed by Redux Toolkit
-Email verification via Nodemailer
-Google OAuth with Passport.js
-Protected routes and middleware guards
-Responsive, card-based UI with CSS Modules
-Pagination on student & admin score listings
+- SPA with React Router
+- State managed by Redux Toolkit
+- Email verification via Nodemailer
+- Google OAuth with Passport.js
+- Protected routes and middleware guards
+- Responsive, card-based UI with CSS Modules
+- Pagination on student & admin score listings
 
 ## 📂 Folder Structure
 IDKAcademy/
